@@ -1,0 +1,51 @@
+Top 10 CPU and Memory consuming applications:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  1.3  22476 13648 ?        Ss   12:21   0:05 /sbin/init
+ubuntu      1096  0.0  0.8  16068  8160 ?        S    12:24   0:01 sshd: ubuntu@pts/0
+root         598  0.0  2.8 1851600 27492 ?       Ssl  12:21   0:00 /usr/lib/snapd/snapd
+root         121  0.0  1.4  50492 14216 ?        S<s  12:21   0:00 /usr/lib/systemd/systemd-journald
+root         924  0.0  1.2 1684096 12528 ?       Ssl  12:21   0:00 /snap/amazon-ssm-agent/7993/amazon-ssm-agent
+root          44  0.0  0.0      0     0 ?        S    12:21   0:00 [kswapd0]
+root         193  0.0  0.8  26468  8288 ?        Ss   12:21   0:00 /usr/lib/systemd/systemd-udevd
+root          15  0.0  0.0      0     0 ?        S    12:21   0:00 [ksoftirqd/0]
+root          22  0.0  0.0      0     0 ?        I    12:21   0:00 [kworker/u30:1-flush-202:0]
+root         179  0.0  2.7 288948 27136 ?        SLsl 12:21   0:00 /sbin/multipathd -d -s
+
+Network Monitoring:
+Concurrent connections:
+1
+Packet drops:
+Kernel          
+Iface   RX-ERR  RX-DRP
+enX0    0       0
+lo      0       0
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+
+System Load:
+ 13:13:19 up 51 min,  1 user,  load average: 0.00, 0.00, 0.00
+Linux 6.8.0-1012-aws (ip-172-31-38-225) 	08/21/24 	_x86_64_	(1 CPU)
+
+13:13:19     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+13:13:19     all    2.18    0.11    1.05    0.80    0.00    0.01    0.25    0.00    0.00   95.60
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           957Mi       357Mi       134Mi       888Ki       662Mi       599Mi
+Swap:             0B          0B          0B
+
+Process Monitoring:
+108
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         598  0.0  2.8 1851600 27492 ?       Ssl  12:21   0:00 /usr/lib/snapd/snapd
+root         179  0.0  2.7 288948 27136 ?        SLsl 12:21   0:00 /sbin/multipathd -d -s
+root         721  0.0  2.3 109988 22656 ?        Ssl  12:21   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         572  0.0  2.1  32456 20608 ?        Ss   12:21   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         121  0.0  1.4  50492 14216 ?        S<s  12:21   0:00 /usr/lib/systemd/systemd-journald
+
+Service Monitoring:
+sshd is not running
+nginx is not running
+iptables is not running
+
